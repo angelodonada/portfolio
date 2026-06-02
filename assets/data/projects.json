@@ -1,66 +1,53 @@
 [
   {
     "id": 1,
-    "nome": "Oxicombustível",
-    "descricao": "Página de vendas desenvolvida sob encomenda para a Fort Equipamentos, com foco na divulgação de sua linha de produtos de oxicombustível. O projeto funciona como uma landing page otimizada para campanhas de tráfego pago, facilitando o contato, a cotação e o processo comercial com o cliente.",
-    "imagens": {
-      "capa": "assets/img/works/oxicombustivel-capa.webp"
+    "name": "Crochê",
+    "description": "Site estilo e-commerce desenvolvido com Bootstrap e JavaScript para um negócio de artesanato, focado na exibição de produtos de crochê. O projeto apresenta navegação dinâmica entre categorias sem recarregamento de página, garantindo fluidez e foco na experiência visual do usuário. Conta com seção de FAQ e uma vitrine personalizada focada na conversão e detalhamento de produtos (preços e medidas)",
+    "images": {
+      "cover": "./assets/img/works/covers/crochet.webp",
+      "preview": "./assets/img/works/previews/crochet.webp"
     },
     "links": {
-      "figma": "https://www.figma.com/design/hZeuZHXAPCwWVugXEHfWE8/Fort-Equipamentos?node-id=1-918&t=7jyEs0uZFjBexruo-1",
-      "github": "https://github.com/wAngeloow/oxicombustivel",
-      "deploy": "https://fortequipamentos.com/oxicombustivel/"
+      "figma": "https://www.figma.com/design/0XdkV2OtfiKNn05tSNj51g/Croch%C3%AA?node-id=0-1&t=TNrkQhfXaBI2iAoA-1",
+      "github": "https://github.com/wAngeloow/crochet",
+      "deploy": "https://wangeloow.github.io/crochet/"
     }
   },
   {
     "id": 2,
-    "nome": "Corrente do bem",
-    "descricao": "O Corrente do Bem é um site que facilita a conexão entre doadores e pessoas em situação de vulnerabilidade. A plataforma permite encontrar pontos de coleta próximos, visualizar locais confiáveis para doação e até se candidatar como novo ponto de apoio, promovendo uma rede solidária e acessível. Todas as informações, locais, contatos e funcionalidades são reais, baseadas em dados coletados ao longo do desenvolvimento do projeto.",
-    "imagens": {
-      "capa": "assets/img/works/corrente-do-bem-capa.webp",
-      "mockup": "assets/img/works/corrente-do-bem-mockup.webp"
+    "name": "Barbearia",
+    "description": "Landing Page com foco no segmento de estética masculina, com sistema de agendamento integrado via modal e navegação por ancoragem. O projeto utiliza Bootstrap para garantir responsividade, apresentando catálogo de serviços com preços, cards de equipe com redes sociais e integração com Google Maps para localização. Focada em conversão, a página centraliza todas as informações de contato e reserva de horários de forma intuitiva.",
+    "images": {
+      "cover": "./assets/img/works/covers/barbershop.webp",
+      "preview": "./assets/img/works/previews/barbershop.webp"
     },
     "links": {
-      "figma": "https://www.figma.com/design/69cArpoFCQ2nx38Iace7Cu/Uniasselvi---Atividade-de-Extens%C3%A3o?node-id=0-1&t=grDU63LBQV5CGady-1",
-      "github": "https://github.com/wAngeloow/corrente-do-bem?tab=readme-ov-file",
-      "deploy": "https://wangeloow.github.io/corrente-do-bem/"
+      "figma": "https://www.figma.com/design/EZcTjcuZzG8A91zlI2lMSw/Barber?node-id=3-5&t=lYHh9cSLf6LUtQkU-1",
+      "github": "https://github.com/wAngeloow/barbershop",
+      "deploy": "https://wangeloow.github.io/barbershop/"
     }
   },
   {
     "id": 3,
-    "nome": "Pomodoro",
-    "descricao": "Ferramenta de produtividade desenvolvida com HTML, CSS e JS puro para otimizar ciclos de estudo. O projeto permite a personalização total dos tempos de foco e descanso, resolvendo problemas de concentração através de uma interface minimalista. Focado em UX, o timer garante autonomia ao usuário para adaptar a técnica Pomodoro ao seu próprio ritmo acadêmico.",
-    "imagens": {
-      "capa": "assets/img/works/pomodoro-capa.webp",
-      "mockup": "assets/img/works/pomodoro-mockup.webp"
+    "name": "Pomodoro",
+    "description": "Ferramenta de produtividade desenvolvida com HTML, CSS e JavaScript puro para otimizar ciclos de estudo. O projeto permite a personalização total dos tempos de foco e descanso, resolvendo problemas de concentração através de uma interface minimalista. Focado em UX, o timer garante autonomia ao usuário para adaptar a técnica Pomodoro ao seu próprio ritmo acadêmico.",
+    "images": {
+      "cover": "./assets/img/works/covers/pomodoro.webp",
+      "preview": "./assets/img/works/previews/pomodoro.webp"
     },
     "links": {
-      "figma": "https://www.figma.com/design/FvJBkMgB2Nhq7Ln6j4bxAr/Pomodoro?node-id=3-62&t=AwIQeNQk3jsyHAU2-1",
+      "figma": "https://www.figma.com/design/FvJBkMgB2Nhq7Ln6j4bxAr/Pomodoro?node-id=3-62&t=AwIQeNQk3JavaScriptyHAU2-1",
       "github": "https://github.com/wAngeloow/pomodoro",
       "deploy": "https://wangeloow.github.io/pomodoro/"
     }
   },
   {
     "id": 4,
-    "nome": "Blog",
-    "descricao": "Protótipo de um portal de notícias com sistema avançado de filtros por nichos como cinema, moda e games. O design contempla fluxos completos de newsletter, páginas de artigos com metadados detalhados e um widget exclusivo de próximos eventos. Projetado no Figma, o foco foi a hierarquia visual e a navegabilidade em ecossistemas de conteúdo denso.",
-    "imagens": {
-      "capa": "assets/img/works/blog-capa.webp",
-      "mockup": "assets/img/works/blog-mockup.webp"
-    },
-    "links": {
-      "figma": "https://www.figma.com/design/HCOCq14ogpQ551MrExF1Gh/Blog?node-id=2019-114&t=kcucFaSQ8dmwQw2h-1",
-      "github": "",
-      "deploy": ""
-    }
-  },
-  {
-    "id": 5,
-    "nome": "To-do list",
-    "descricao": "Gerenciador de tarefas desenvolvido com Vanilla JS para complementar o ecossistema de produtividade do Pomodoro. O sistema oferece CRUD completo, feedback sonoro ao concluir metas e contadores dinâmicos de progresso. Utiliza LocalStorage para persistência de dados, garantindo que as tarefas não sejam perdidas ao fechar o navegador.",
-    "imagens": {
-      "capa": "assets/img/works/to-do-list-capa.webp",
-      "mockup": "assets/img/works/to-do-list-mockup.webp"
+    "name": "To-do list",
+    "description": "Gerenciador de tarefas desenvolvido com JavaScript puro para complementar o ecossistema de produtividade do Pomodoro. O sistema oferece CRUD completo, feedback sonoro ao concluir metas e contadores dinâmicos de progresso. Utiliza LocalStorage para persistência de dados, garantindo que as tarefas não sejam perdidas ao fechar o navegador.",
+    "images": {
+      "cover": "./assets/img/works/covers/to-do-list.webp",
+      "preview": "./assets/img/works/previews/to-do-list.webp"
     },
     "links": {
       "figma": "https://www.figma.com/design/jMLDmWsBFTw0Yfb9ynFH5b/Lista-de-Tarefas?node-id=37-23&t=FnNnrTuPqmzjg9yP-1",
@@ -69,12 +56,40 @@
     }
   },
   {
+    "id": 5,
+    "name": "Corrente do bem",
+    "description": "Projeto de extensão universitária focado em impacto social, desenvolvido para facilitar a conexão entre doadores e causas solidárias. O site permite a geolocalização de pontos de coleta, verificação de locais confiáveis para doação e um sistema de cadastro para novos voluntários. O projeto envolveu coleta de dados reais e mapeamento de campo, resultando em uma interface acessível e funcional dedicada a promover o suporte a comunidades em situação de vulnerabilidade.",
+    "images": {
+      "cover": "./assets/img/works/covers/corrente-do-bem.webp",
+      "preview": "./assets/img/works/previews/corrente-do-bem.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/69cArpoFCQ2nx38Iace7Cu/Uniasselvi---Atividade-de-Extens%C3%A3o?node-id=0-1&t=grDU63LBQV5CGady-1",
+      "github": "https://github.com/wAngeloow/corrente-do-bem?tab=readme-ov-file",
+      "deploy": "https://wangeloow.github.io/corrente-do-bem/"
+    }
+  },
+  {
     "id": 6,
-    "nome": "Coldplay",
-    "descricao": "Landing page institucional desenvolvida como tributo à banda Coldplay, unindo biografia, integrantes e discografia completa. O projeto apresenta uma seção interativa de álbuns com integração direta para o Spotify, utilizando HTML, CSS e JavaScript puros. O foco principal foi a organização de layouts densos e a criação de uma experiência imersiva para fãs.",
-    "imagens": {
-      "capa": "assets/img/works/coldplay-capa.webp",
-      "mockup": "assets/img/works/coldplay-mockup.webp"
+    "name": "Oxicombustível",
+    "featured": true,
+    "description": "Página de vendas desenvolvida sob encomenda para a Fort Equipamentos, com foco na divulgação de sua linha de produtos de oxicombustível. O projeto funciona como uma landing page otimizada para campanhas de tráfego pago, facilitando o contato, a cotação e o processo comercial com o cliente.",
+    "images": {
+      "cover": "./assets/img/works/covers/oxicombustivel.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/hZeuZHXAPCwWVugXEHfWE8/Fort-Equipamentos?node-id=1-918&t=7jyEs0uZFjBexruo-1",
+      "github": "https://github.com/wAngeloow/oxicombustivel",
+      "deploy": "https://fortequipamentos.com/oxicombustivel/"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Coldplay",
+    "description": "Landing page institucional desenvolvida como tributo à banda Coldplay, unindo biografia, integrantes e discografia completa. O projeto apresenta uma seção interativa de álbuns com integração direta para o Spotify, utilizando HTML, CSS e JavaScript puros. O foco principal foi a organização de layouts densos e a criação de uma experiência imersiva para fãs.",
+    "images": {
+      "cover": "./assets/img/works/covers/coldplay.webp",
+      "preview": "./assets/img/works/previews/coldplay.webp"
     },
     "links": {
       "figma": "https://www.figma.com/design/xzma0hvFQKIZ9Ix53cXbz8/Coldplay?node-id=2020-472&t=JefNR6IOwKD2kUIK-1",
@@ -83,12 +98,40 @@
     }
   },
   {
-    "id": 7,
-    "nome": "Interface de Autenticação",
-    "descricao": "Protótipo de alta fidelidade focado no fluxo de autenticação e registro de usuários. O design explora uma estética moderna e minimalista, priorizando a clareza visual e a facilidade de navegação entre as telas de login e cadastro. Projetado no Figma, o foco foi a microinteração e o design centrado no usuário para fluxos de acesso simples.",
-    "imagens": {
-      "capa": "assets/img/works/login-capa.webp",
-      "mockup": "assets/img/works/login-mockup.webp"
+    "id": 8,
+    "name": "Blog",
+    "description": "Protótipo de um portal de notícias com sistema avançado de filtros por nichos como cinema, moda e games. O design contempla fluxos completos de newsletter, páginas de artigos com metadados detalhados e um widget exclusivo de próximos eventos. Projetado no Figma, o foco foi a hierarquia visual e a navegabilidade em ecossistemas de conteúdo denso.",
+    "images": {
+      "cover": "./assets/img/works/covers/blog.webp",
+      "preview": "./assets/img/works/previews/blog.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/HCOCq14ogpQ551MrExF1Gh/Blog?node-id=2019-114&t=kcucFaSQ8dmwQw2h-1",
+      "github": "",
+      "deploy": ""
+    }
+  },
+  {
+    "id": 9,
+    "name": "Calculadora de IMC",
+    "description": "Calculadora de Índice de Massa Corporal (IMC) focada em alta usabilidade e interatividade no front-end. Desenvolvido com JavaScript puro, o sistema realiza cálculos automáticos e conta com um algoritmo inteligente de normalização que converte a altura de centímetros para metros caso o usuário insira os dados fora do padrão. A aplicação gerencia dinamicamente o DOM para alternar layouts entre o estado inicial e o de resultados, oferecendo feedback visual imediato através da alteração de cores, diagnósticos textuais e gráficos específicos para cada uma das seis faixas de classificação de peso, além de possuir fluxo completo de reset.",
+    "images": {
+      "cover": "./assets/img/works/covers/bmi-calculator.webp",
+      "preview": "./assets/img/works/previews/bmi-calculator.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/pNU4IQoKl9aM8OOmJ0FpkE/BMI-Calculator?node-id=24-4&t=YOQomvqOP9skMIUe-1",
+      "github": "https://github.com/wAngeloow/bmi-calculator",
+      "deploy": "https://wangeloow.github.io/bmi-calculator/"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Interface de Autenticação",
+    "description": "Interface de autenticação desenvolvida com Tailwind CSS e JavaScript puro, focada na experiência do usuário para fluxos de acesso. A aplicação apresenta um sistema dinâmico que alterna entre as telas de login e registro sem recarregamento, além de contar com microinterações essenciais de UX, como a alternância de visibilidade da senha e um sistema de feedback via pop-up para notificações de sucesso. O layout foi estruturado de forma totalmente responsiva, priorizando a clareza visual e a segurança de navegação.",
+    "images": {
+      "cover": "./assets/img/works/covers/authentication-interface.webp",
+      "preview": "./assets/img/works/previews/authentication-interface.webp"
     },
     "links": {
       "figma": "https://www.figma.com/design/aG8yNZCvwBdvTkJIDVDv87/Login-Interface?node-id=2024-387&t=G8VmtUSrk51N17w9-1",
@@ -97,12 +140,12 @@
     }
   },
   {
-    "id": 8,
-    "nome": "Newsletter",
-    "descricao": "Landing page de pré-venda da nova camisa da Seleção Francesa desenvolvida para captura de leads através de newsletter exclusiva. O projeto apresenta design responsivo com destaque visual para o produto, formulário de inscrição integrado e sistema de internacionalização que permite alternar entre Português, Inglês e Francês dinamicamente, sem recarregar a página. Construído com HTML, Tailwind CSS e JavaScript, prioriza experiência do usuário, acessibilidade e conversão.",
-    "imagens": {
-      "capa": "assets/img/works/newsletter-capa.webp",
-      "mockup": "assets/img/works/newsletter-mockup.webp"
+    "id": 11,
+    "name": "Newsletter",
+    "description": "Landing page de pré-venda com destaque visual para produto, desenvolvida para a captura de leads através de uma newsletter exclusiva. O projeto apresenta design responsivo, formulário de inscrição integrado e um sistema de internacionalização que permite alternar entre Português, Inglês e Francês dinamicamente sem recarregar a página, persistindo a escolha do idioma no LocalStorage para futuras visitas. Construída com HTML, Tailwind CSS e JavaScript, a página prioriza experiência do usuário, acessibilidade e foco em conversão.",
+    "images": {
+      "cover": "./assets/img/works/covers/newsletter.webp",
+      "preview": "./assets/img/works/previews/newsletter.webp"
     },
     "links": {
       "figma": "https://www.figma.com/design/ec4HzCU5ZRk0yr1K3oRdQm/Newsletter?node-id=2008-226&t=XbXlA6XMAdLqSHIa-1",
@@ -111,31 +154,17 @@
     }
   },
   {
-    "id": 9,
-    "nome": "Crochê",
-    "descricao": "Plataforma de catálogo interativo desenvolvida com Bootstrap e JavaScript para um negócio de artesanato. O projeto apresenta navegação dinâmica entre categorias sem recarregamento de página, garantindo fluidez e foco na experiência visual do usuário. Conta com seção de FAQ e uma vitrine personalizada focada na conversão e detalhamento de produtos.",
-    "imagens": {
-      "capa": "assets/img/works/croche-capa.webp",
-      "mockup": "assets/img/works/croche-mockup.webp"
+    "id": 12,
+    "name": "Apex Combat",
+    "description": "Landing Page de alta performance desenvolvida para o segmento de academias de artes marciais, focada na conversão e apresentação institucional. O projeto utiliza GSAP e ScrollTrigger para criar uma experiência imersiva com animações de entrada coordenadas e efeitos de parallax ao longo do scroll. Construída com Tailwind CSS, a interface apresenta seções de modalidades (Jiu-Jitsu, Boxe e Karatê), planos, equipe técnica e um sistema de FAQ interativo. Destaca-se pelo uso de vídeo integrado com controles customizados via JavaScript e componentes de design modernos, como o efeito de marquee dinâmico e botões com animações de preenchimento.",
+    "images": {
+      "cover": "./assets/img/works/covers/martial-arts.webp",
+      "preview": "./assets/img/works/previews/martial-arts.webp"
     },
     "links": {
-      "figma": "https://www.figma.com/design/0XdkV2OtfiKNn05tSNj51g/Croch%C3%AA?node-id=0-1&t=TNrkQhfXaBI2iAoA-1",
-      "github": "https://github.com/wAngeloow/croche",
-      "deploy": "https://wangeloow.github.io/croche/"
-    }
-  },
-  {
-    "id": 10,
-    "nome": "Barber",
-    "descricao": "Plataforma completa para barbearias com sistema de agendamento integrado via modal e navegação por ancoragem. O projeto utiliza Bootstrap para garantir responsividade, apresentando catálogo de serviços com preços, cards de equipe com redes sociais e integração com Google Maps. Focado em conversão, centraliza todas as informações de contato e localização de forma intuitiva.",
-    "imagens": {
-      "capa": "assets/img/works/barber-capa.webp",
-      "mockup": "assets/img/works/barber-mockup.webp"
-    },
-    "links": {
-      "figma": "https://www.figma.com/design/EZcTjcuZzG8A91zlI2lMSw/Barber?node-id=3-5&t=lYHh9cSLf6LUtQkU-1",
-      "github": "https://github.com/wAngeloow/barber",
-      "deploy": "https://wangeloow.github.io/barber/"
+      "figma": "https://www.figma.com/design/LWNb17jOhnNAn1VDEfKyqU/Martial-Arts?node-id=24-4&t=nLmnRrEQUSPdtslC-1",
+      "github": "https://github.com/wAngeloow/martial-arts",
+      "deploy": "https://wangeloow.github.io/martial-arts/"
     }
   }
 ]

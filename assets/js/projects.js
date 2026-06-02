@@ -3,7 +3,10 @@ async function loadProjects() {
     try {
         // Fetch project data
         const response = await fetch(`${pathPrefix}assets/data/projects.json`);
-        const projects = await response.json();
+        let projects = await response.json();
+
+        // Sort by ID descending (newest first)
+        projects.sort((a, b) => b.id - a.id);
 
         // Store globally for modal usage
         window.allProjects = projects;
@@ -17,21 +20,29 @@ async function loadProjects() {
             leftCol.innerHTML = '';
             rightCol.innerHTML = '';
 
-            // Render featured project (first item in JSON)
-            if (featureContainer) {
-                renderFeatureCard(projects[0]);
+            // Handle custom featured project logic
+            let featuredProject = projects.find(p => p.featured === true || p.destaque === true);
+            let otherProjects;
+
+            if (featureContainer && projects.length > 0) {
+                if (!featuredProject) {
+                    featuredProject = projects[0];
+                }
+                renderFeatureCard(featuredProject);
             }
 
             // Detect if user is on the full projects page
             const isAllProjectsPage = window.location.pathname.includes('projetos.html');
-            let otherProjects;
+
+            // Filters out "other projects" to remove the one that was chosen as featured.
+            const filteredProjects = projects.filter(p => p.id !== featuredProject?.id);
 
             // Select which projects should be displayed
             if (isAllProjectsPage) {
-                otherProjects = projects.slice(1);
+                otherProjects = filteredProjects;
             } else {
-                // Home page shows only first 6
-                otherProjects = projects.slice(1, 7);
+                // Home page shows only first 6 from the rest
+                otherProjects = filteredProjects.slice(0, 6);
             }
 
             // Distribute project cards between left and right columns
@@ -51,27 +62,27 @@ async function loadProjects() {
 }
 
 // Handle hybrid background (image or HEX color)
-function getBackgroundStyle(capaValue, opacity = 0.7) {
+function getBackgroundStyle(coverValue, opacity = 0.7) {
     const overlay = `linear-gradient(rgba(0,0,0,${opacity}), rgba(0,0,0,${opacity}))`;
 
     // If value is a HEX color use background color
-    if (capaValue && capaValue.startsWith('#')) {
-        return `background: ${overlay}, ${capaValue};`;
+    if (coverValue && coverValue.startsWith('#')) {
+        return `background: ${overlay}, ${coverValue};`;
     }
 
     // Otherwise treat as image path
-    return `background-image: ${overlay}, url('${pathPrefix}${capaValue}');`;
+    return `background-image: ${overlay}, url('${pathPrefix}${coverValue}');`;
 }
 
 // Generate project card HTML
 function generateCardHTML(project) {
-    const bgStyle = getBackgroundStyle(project.imagens.capa, 0.7);
+    const bgStyle = getBackgroundStyle(project.images?.cover, 0.7);
 
     return `
         <article onclick="openModal(${project.id})" 
             style="${bgStyle}"
             class="flex items-center justify-between h-[100px] w-[350px] cursor-pointer rounded-[15px] bg-cover bg-center px-[30px] py-[30px] transition-all hover:scale-[1.02] md:w-[326px] xl:w-[416px]">
-            <h3 class="text-[14px] font-semibold text-white md:text-[16px]">${project.nome}</h3>
+            <h3 class="text-[14px] font-semibold text-white md:text-[16px]">${project.name}</h3>
             <i class="fa-solid fa-expand text-[16px] text-white md:text-[18px]"></i>
         </article>
     `;
@@ -83,7 +94,7 @@ function renderFeatureCard(project) {
     if (!container) return;
 
     // Apply background style (image or color)
-    container.setAttribute('style', getBackgroundStyle(project.imagens.capa, 0.8));
+    container.setAttribute('style', getBackgroundStyle(project.images?.cover, 0.8));
 
     const iconClass = "group flex h-[30px] w-[30px] items-center justify-center rounded-full border border-white transition-all duration-500 hover:scale-110";
 
@@ -100,18 +111,18 @@ function renderFeatureCard(project) {
 
     container.innerHTML = `
         <header class="flex items-center justify-between py-[30px]">
-            <h3 class="text-[14px] font-semibold text-white md:text-[16px]">${project.nome}</h3>
+            <h3 class="text-[14px] font-semibold text-white md:text-[16px]">${project.name}</h3>
             <span title="Destaque">
                 <i class="fa-solid fa-star text-[16px] text-yellow-500 md:text-[20px]"></i>
             </span>
         </header>
         <div class="flex flex-col gap-[30px] py-[30px] md:flex-row md:justify-between">
-            <p class="text-[12px] text-justify text-gray-400 md:w-[500px] md:text-[14px]">${project.descricao}</p>
+            <p class="text-[12px] text-justify text-gray-400 md:w-[500px] md:text-[14px]">${project.description}</p>
             <nav aria-label="Links do projeto">
                 <ul class="flex justify-center gap-[10px] md:flex-col">
-                    ${getLinkHTML(project.links.figma, 'fa-brands fa-figma', 'Figma')}
-                    ${getLinkHTML(project.links.github, 'fa-brands fa-github', 'GitHub')}
-                    ${getLinkHTML(project.links.deploy, 'fa-solid fa-eye', 'Deploy')}
+                    ${getLinkHTML(project.links?.figma, 'fa-brands fa-figma', 'Figma')}
+                    ${getLinkHTML(project.links?.github, 'fa-brands fa-github', 'GitHub')}
+                    ${getLinkHTML(project.links?.deploy, 'fa-solid fa-eye', 'Deploy')}
                 </ul>
             </nav>
         </div>
@@ -128,13 +139,13 @@ function openModal(projectId) {
     if (!project || !modal) return;
 
     // Populate modal content
-    modal.querySelector('#modal-title').textContent = project.nome;
-    modal.querySelector('img').src = `${pathPrefix}${project.imagens.mockup || project.imagens.capa}`;
-    modal.querySelector('p').textContent = project.descricao;
+    modal.querySelector('#modal-title').textContent = project.name;
+    modal.querySelector('img').src = `${pathPrefix}${project.images?.preview || project.images?.cover || ''}`;
+    modal.querySelector('p').textContent = project.description;
 
     // Update project links
     const links = modal.querySelectorAll('nav a');
-    const projectLinks = [project.links.figma, project.links.github, project.links.deploy];
+    const projectLinks = [project.links?.figma, project.links?.github, project.links?.deploy];
 
     projectLinks.forEach((url, index) => {
         const anchor = links[index];
@@ -173,7 +184,6 @@ function closeModal() {
 
 // Global modal interactions
 document.addEventListener('click', (e) => {
-
     // Close if clicking the close button
     if (e.target.closest('[aria-label="Fechar modal"]')) {
         closeModal();
@@ -183,5 +193,4 @@ document.addEventListener('click', (e) => {
     if (e.target.id === 'overlay' || e.target.id === 'overlay-modal') {
         closeModal();
     }
-
 });
