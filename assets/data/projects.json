@@ -84,7 +84,7 @@
   },
   {
     "id": 7,
-    "nome": "Login",
+    "nome": "Interface de Autenticação",
     "descricao": "Protótipo de alta fidelidade focado no fluxo de autenticação e registro de usuários. O design explora uma estética moderna e minimalista, priorizando a clareza visual e a facilidade de navegação entre as telas de login e cadastro. Projetado no Figma, o foco foi a microinteração e o design centrado no usuário para fluxos de acesso simples.",
     "imagens": {
       "capa": "assets/img/works/login-capa.webp",
@@ -92,22 +92,22 @@
     },
     "links": {
       "figma": "https://www.figma.com/design/aG8yNZCvwBdvTkJIDVDv87/Login-Interface?node-id=2024-387&t=G8VmtUSrk51N17w9-1",
-      "github": "",
-      "deploy": ""
+      "github": "https://github.com/wAngeloow/authentication-interface",
+      "deploy": "https://wangeloow.github.io/authentication-interface/"
     }
   },
   {
     "id": 8,
     "nome": "Newsletter",
-    "descricao": "Protótipo de alta fidelidade para captura de leads, explorando a versatilidade entre temas claro e escuro. O design foca na conversão com um campo de inscrição otimizado, integração visual com redes sociais e uma hierarquia tipográfica precisa. Desenvolvido no Figma para validar microinterações e contraste em diferentes condições de iluminação.",
+    "descricao": "Landing page de pré-venda da nova camisa da Seleção Francesa desenvolvida para captura de leads através de newsletter exclusiva. O projeto apresenta design responsivo com destaque visual para o produto, formulário de inscrição integrado e sistema de internacionalização que permite alternar entre Português, Inglês e Francês dinamicamente, sem recarregar a página. Construído com HTML, Tailwind CSS e JavaScript, prioriza experiência do usuário, acessibilidade e conversão.",
     "imagens": {
       "capa": "assets/img/works/newsletter-capa.webp",
       "mockup": "assets/img/works/newsletter-mockup.webp"
     },
     "links": {
       "figma": "https://www.figma.com/design/ec4HzCU5ZRk0yr1K3oRdQm/Newsletter?node-id=2008-226&t=XbXlA6XMAdLqSHIa-1",
-      "github": "",
-      "deploy": ""
+      "github": "https://github.com/wAngeloow/newsletter",
+      "deploy": "https://wangeloow.github.io/newsletter/"
     }
   },
   {
