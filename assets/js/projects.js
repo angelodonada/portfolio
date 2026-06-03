@@ -12,48 +12,27 @@ async function loadProjects() {
         window.allProjects = projects;
 
         // DOM references
-        const leftCol = document.getElementById('left-column-projects');
-        const rightCol = document.getElementById('right-column-projects');
+        const projectsContainer = document.getElementById('projects-container');
         const featureContainer = document.getElementById('feature-project-container');
 
-        if (leftCol && rightCol) {
-            leftCol.innerHTML = '';
-            rightCol.innerHTML = '';
+        if (projectsContainer) {
+            projectsContainer.innerHTML = '';
 
-            // Handle custom featured project logic
+            // Handle featured project logic
             let featuredProject = projects.find(p => p.featured === true || p.destaque === true);
-            let otherProjects;
+            if (!featuredProject && projects.length > 0) featuredProject = projects[0];
+            if (featureContainer) renderFeatureCard(featuredProject);
 
-            if (featureContainer && projects.length > 0) {
-                if (!featuredProject) {
-                    featuredProject = projects[0];
-                }
-                renderFeatureCard(featuredProject);
-            }
-
-            // Detect if user is on the full projects page
+            // Filter out the featured project from the main list
             const isAllProjectsPage = window.location.pathname.includes('projetos.html');
-
-            // Filters out "other projects" to remove the one that was chosen as featured.
             const filteredProjects = projects.filter(p => p.id !== featuredProject?.id);
 
-            // Select which projects should be displayed
-            if (isAllProjectsPage) {
-                otherProjects = filteredProjects;
-            } else {
-                // Home page shows only first 6 from the rest
-                otherProjects = filteredProjects.slice(0, 6);
-            }
+            // Limit to 6 projects on homepage, show all on the full projects page
+            let otherProjects = isAllProjectsPage ? filteredProjects : filteredProjects.slice(0, 6);
 
-            // Distribute project cards between left and right columns
-            otherProjects.forEach((project, index) => {
-                const cardHTML = generateCardHTML(project);
-
-                if (index % 2 === 0) {
-                    leftCol.innerHTML += cardHTML;
-                } else {
-                    rightCol.innerHTML += cardHTML;
-                }
+            // Render remaining projects into the grid container
+            otherProjects.forEach((project) => {
+                projectsContainer.innerHTML += generateCardHTML(project);
             });
         }
     } catch (error) {
@@ -81,7 +60,8 @@ function generateCardHTML(project) {
     return `
         <article onclick="openModal(${project.id})" 
             style="${bgStyle}"
-            class="flex items-center justify-between h-[100px] w-[350px] cursor-pointer rounded-[15px] bg-cover bg-center px-[30px] py-[30px] transition-all hover:scale-[1.02] md:w-[326px] xl:w-[416px]">
+            class="flex items-center justify-between h-[100px] w-[350px] cursor-pointer rounded-[15px] bg-cover bg-center px-[30px] py-[30px] transition-all hover:scale-[1.02] 
+            md:w-[calc(50%-8px)] xl:w-[416px]">
             <h3 class="text-[14px] font-semibold text-white md:text-[16px]">${project.name}</h3>
             <i class="fa-solid fa-expand text-[16px] text-white md:text-[18px]"></i>
         </article>

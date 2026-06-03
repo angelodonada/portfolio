@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "name": "To-do list",
+    "name": "Lista de Tarefas",
     "description": "Gerenciador de tarefas desenvolvido com JavaScript puro para complementar o ecossistema de produtividade do Pomodoro. O sistema oferece CRUD completo, feedback sonoro ao concluir metas e contadores dinâmicos de progresso. Utiliza LocalStorage para persistência de dados, garantindo que as tarefas não sejam perdidas ao fechar o navegador.",
     "images": {
       "cover": "./assets/img/works/covers/to-do-list.webp",
