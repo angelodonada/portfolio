@@ -166,5 +166,19 @@
       "github": "https://github.com/wAngeloow/martial-arts",
       "deploy": "https://wangeloow.github.io/martial-arts/"
     }
+  },
+  {
+    "id": 13,
+    "name": "Curso de Italiano",
+    "description": "Landing page de alta conversão para venda de curso de italiano, desenvolvida com foco em UI/UX e estratégia de vendas. O projeto utiliza HTML, Tailwind CSS e JavaScript para uma interface responsiva, com animações fluidas implementadas via GSAP para engajamento. A página inclui seções estratégicas como FAQ, tabelas comparativas e prova social com vídeos gerados por IA, demonstrando habilidades em desenvolvimento front-end e foco em performance e conversão.",
+    "images": {
+      "cover": "./assets/img/works/covers/italian-course.webp",
+      "preview": "./assets/img/works/previews/italian-course.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/IRBPoZqbjZBb6ZPWRgHQD0/Italian-Course?node-id=24-4&t=s9LkZNacYiFeA15B-1",
+      "github": "https://github.com/wAngeloow/italian-course",
+      "deploy": "https://wangeloow.github.io/italian-course/"
+    }
   }
 ]
