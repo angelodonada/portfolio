@@ -11,4 +11,4 @@ Disallow: /404.html
 Disallow: /404
 
 # Host e Sitemap
-Sitemap: https://wangeloow.github.io/portfolio/sitemap.xml
+Sitemap: https://angelodonada.github.io/portfolio/sitemap.xml
